@@ -2,3 +2,5 @@
 /cluster.iml
 
 kubectl-jq
+
+/dist/**
