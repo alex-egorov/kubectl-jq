@@ -1,6 +1,6 @@
 project_name: kubectl-jq
 env_files:
-    github_token: ~/.github_token
+    github_token: ~/.ssh/github-token
 before:
     hooks:
         - go mod download
@@ -9,18 +9,18 @@ before:
 builds:
     - id: kubectl-jq
       dir: .
-      main: ./cmd/kubectl-jq/main.go
+      main: ./main.go
       binary: kubectl-jq
       env:
           - CGO_ENABLED=0
       goos:
           - linux
-          - windows
+          #- windows
           - darwin
       goarch:
           - amd64
-          - arm
-          - arm64
+          #- arm
+          #- arm64
       ignore:
           - goos: darwin
             goarch: arm
@@ -54,7 +54,7 @@ changelog:
             - "^test:"
 release:
     github:
-        owner: jrockway
+        owner: alex-egorov
         name: kubectl-jq
     ids:
         - kubectl-jq

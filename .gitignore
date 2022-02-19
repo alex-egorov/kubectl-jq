@@ -1,16 +1,4 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+.idea/**
+/cluster.iml
 
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool.
-*.out
-coverage.html
-
-# goreleaser outputs
-dist/
+kubectl-jq

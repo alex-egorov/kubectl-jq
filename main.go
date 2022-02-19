@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/jrockway/kubectl-jq/pkg/cmd"
+	"github.com/alex-egorov/kubectl-jq/pkg/cmd"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
